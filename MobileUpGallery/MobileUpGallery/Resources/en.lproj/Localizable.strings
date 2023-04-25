@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MobileUpGallery
+
+  Created by Pavlentiy on 25.04.2023.
+  
+*/
+
+// Authorization
+"app_name_label" = "Mobile Up\nGallery";
+"authorization_by_vk_button_title" = "Login via VK";
