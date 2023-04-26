@@ -14,13 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var coordinator: RootCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
 
         let serviceAssembly = ServiceAssembly()
         coordinator = RootCoordinator(
-            authorizationAssembly: AuthorizationAssembly(serviceAssembly: serviceAssembly)
+            loginAssembly: LoginAssembly(serviceAssembly: serviceAssembly)
         )
         coordinator?.start(in: window)
 

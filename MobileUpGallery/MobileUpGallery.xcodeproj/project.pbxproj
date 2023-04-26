@@ -11,17 +11,18 @@
 		E936291329F6C75400FB7FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E936291229F6C75400FB7FA5 /* AppDelegate.swift */; };
 		E936291C29F6C75900FB7FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E936291B29F6C75900FB7FA5 /* Assets.xcassets */; };
 		E936291F29F6C75900FB7FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E936291D29F6C75900FB7FA5 /* LaunchScreen.storyboard */; };
-		E9CEB8B929F7C16800CA1759 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8B829F7C16800CA1759 /* AuthorizationViewController.swift */; };
-		E9CEB8BB29F7C1FD00CA1759 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8BA29F7C1FD00CA1759 /* AuthorizationPresenter.swift */; };
-		E9CEB8BD29F7C28D00CA1759 /* AuthorizationModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8BC29F7C28D00CA1759 /* AuthorizationModuleOutput.swift */; };
+		E940858929F929F900E6F596 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940858829F929F900E6F596 /* WebViewController.swift */; };
+		E9CEB8B929F7C16800CA1759 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8B829F7C16800CA1759 /* LoginViewController.swift */; };
+		E9CEB8BB29F7C1FD00CA1759 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8BA29F7C1FD00CA1759 /* LoginPresenter.swift */; };
+		E9CEB8BD29F7C28D00CA1759 /* LoginModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8BC29F7C28D00CA1759 /* LoginModuleOutput.swift */; };
 		E9CEB8C129F7C2EF00CA1759 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8C029F7C2EF00CA1759 /* NetworkService.swift */; };
 		E9CEB8C329F7C33600CA1759 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8C229F7C33600CA1759 /* NetworkServiceProtocol.swift */; };
-		E9CEB8C529F7C43A00CA1759 /* AuthorizationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8C429F7C43A00CA1759 /* AuthorizationViewInput.swift */; };
-		E9CEB8C729F7C45F00CA1759 /* AuthorizationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8C629F7C45F00CA1759 /* AuthorizationViewOutput.swift */; };
+		E9CEB8C529F7C43A00CA1759 /* LoginViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8C429F7C43A00CA1759 /* LoginViewInput.swift */; };
+		E9CEB8C729F7C45F00CA1759 /* LoginViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8C629F7C45F00CA1759 /* LoginViewOutput.swift */; };
 		E9CEB8C929F7C5CD00CA1759 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8C829F7C5CD00CA1759 /* AuthorizationService.swift */; };
 		E9CEB8CC29F7C5FA00CA1759 /* AuthorizationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8CB29F7C5FA00CA1759 /* AuthorizationServiceProtocol.swift */; };
 		E9CEB8CF29F7C7FB00CA1759 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8CE29F7C7FB00CA1759 /* ServiceAssembly.swift */; };
-		E9CEB8D129F7C87A00CA1759 /* AuthorizationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8D029F7C87A00CA1759 /* AuthorizationAssembly.swift */; };
+		E9CEB8D129F7C87A00CA1759 /* LoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8D029F7C87A00CA1759 /* LoginAssembly.swift */; };
 		E9CEB8D429F7C9C200CA1759 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8D329F7C9C200CA1759 /* RootCoordinator.swift */; };
 		E9CEB8D829F7DCD800CA1759 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9CEB8DA29F7DCD800CA1759 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -35,17 +36,18 @@
 		E936291B29F6C75900FB7FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E936291E29F6C75900FB7FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E936292029F6C75900FB7FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9CEB8B829F7C16800CA1759 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
-		E9CEB8BA29F7C1FD00CA1759 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
-		E9CEB8BC29F7C28D00CA1759 /* AuthorizationModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationModuleOutput.swift; sourceTree = "<group>"; };
+		E940858829F929F900E6F596 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E9CEB8B829F7C16800CA1759 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E9CEB8BA29F7C1FD00CA1759 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		E9CEB8BC29F7C28D00CA1759 /* LoginModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleOutput.swift; sourceTree = "<group>"; };
 		E9CEB8C029F7C2EF00CA1759 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E9CEB8C229F7C33600CA1759 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
-		E9CEB8C429F7C43A00CA1759 /* AuthorizationViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewInput.swift; sourceTree = "<group>"; };
-		E9CEB8C629F7C45F00CA1759 /* AuthorizationViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewOutput.swift; sourceTree = "<group>"; };
+		E9CEB8C429F7C43A00CA1759 /* LoginViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
+		E9CEB8C629F7C45F00CA1759 /* LoginViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewOutput.swift; sourceTree = "<group>"; };
 		E9CEB8C829F7C5CD00CA1759 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
 		E9CEB8CB29F7C5FA00CA1759 /* AuthorizationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationServiceProtocol.swift; sourceTree = "<group>"; };
 		E9CEB8CE29F7C7FB00CA1759 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
-		E9CEB8D029F7C87A00CA1759 /* AuthorizationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAssembly.swift; sourceTree = "<group>"; };
+		E9CEB8D029F7C87A00CA1759 /* LoginAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembly.swift; sourceTree = "<group>"; };
 		E9CEB8D329F7C9C200CA1759 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		E9CEB8D729F7DCCC00CA1759 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E9CEB8D929F7DCD800CA1759 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -133,29 +135,46 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		E940858C29F9612100E6F596 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				E940858D29F9613800E6F596 /* AuthorizationWebViewController */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		E940858D29F9613800E6F596 /* AuthorizationWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AuthorizationWebViewController;
+			sourceTree = "<group>";
+		};
 		E9CEB8B429F7C10D00CA1759 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				E9CEB8B529F7C11F00CA1759 /* Authorization */,
+				E940858C29F9612100E6F596 /* Authorization */,
+				E9CEB8B529F7C11F00CA1759 /* Login */,
+				E940858829F929F900E6F596 /* WebViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		E9CEB8B529F7C11F00CA1759 /* Authorization */ = {
+		E9CEB8B529F7C11F00CA1759 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				E9CEB8B629F7C12A00CA1759 /* View */,
 				E9CEB8B729F7C12F00CA1759 /* Presenter */,
 			);
-			path = Authorization;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		E9CEB8B629F7C12A00CA1759 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E9CEB8B829F7C16800CA1759 /* AuthorizationViewController.swift */,
-				E9CEB8C429F7C43A00CA1759 /* AuthorizationViewInput.swift */,
-				E9CEB8C629F7C45F00CA1759 /* AuthorizationViewOutput.swift */,
+				E9CEB8B829F7C16800CA1759 /* LoginViewController.swift */,
+				E9CEB8C429F7C43A00CA1759 /* LoginViewInput.swift */,
+				E9CEB8C629F7C45F00CA1759 /* LoginViewOutput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,8 +182,8 @@
 		E9CEB8B729F7C12F00CA1759 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				E9CEB8BA29F7C1FD00CA1759 /* AuthorizationPresenter.swift */,
-				E9CEB8BC29F7C28D00CA1759 /* AuthorizationModuleOutput.swift */,
+				E9CEB8BA29F7C1FD00CA1759 /* LoginPresenter.swift */,
+				E9CEB8BC29F7C28D00CA1759 /* LoginModuleOutput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -199,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				E9CEB8CE29F7C7FB00CA1759 /* ServiceAssembly.swift */,
-				E9CEB8D029F7C87A00CA1759 /* AuthorizationAssembly.swift */,
+				E9CEB8D029F7C87A00CA1759 /* LoginAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -333,15 +352,16 @@
 				E9CEB8C929F7C5CD00CA1759 /* AuthorizationService.swift in Sources */,
 				E9CEB8CC29F7C5FA00CA1759 /* AuthorizationServiceProtocol.swift in Sources */,
 				E9CEB8C129F7C2EF00CA1759 /* NetworkService.swift in Sources */,
-				E9CEB8D129F7C87A00CA1759 /* AuthorizationAssembly.swift in Sources */,
-				E9CEB8C529F7C43A00CA1759 /* AuthorizationViewInput.swift in Sources */,
-				E9CEB8BB29F7C1FD00CA1759 /* AuthorizationPresenter.swift in Sources */,
+				E9CEB8D129F7C87A00CA1759 /* LoginAssembly.swift in Sources */,
+				E9CEB8C529F7C43A00CA1759 /* LoginViewInput.swift in Sources */,
+				E9CEB8BB29F7C1FD00CA1759 /* LoginPresenter.swift in Sources */,
 				E9CEB8C329F7C33600CA1759 /* NetworkServiceProtocol.swift in Sources */,
-				E9CEB8B929F7C16800CA1759 /* AuthorizationViewController.swift in Sources */,
+				E9CEB8B929F7C16800CA1759 /* LoginViewController.swift in Sources */,
 				E9CEB8CF29F7C7FB00CA1759 /* ServiceAssembly.swift in Sources */,
-				E9CEB8C729F7C45F00CA1759 /* AuthorizationViewOutput.swift in Sources */,
+				E9CEB8C729F7C45F00CA1759 /* LoginViewOutput.swift in Sources */,
 				E9CEB8D429F7C9C200CA1759 /* RootCoordinator.swift in Sources */,
-				E9CEB8BD29F7C28D00CA1759 /* AuthorizationModuleOutput.swift in Sources */,
+				E940858929F929F900E6F596 /* WebViewController.swift in Sources */,
+				E9CEB8BD29F7C28D00CA1759 /* LoginModuleOutput.swift in Sources */,
 				E936291329F6C75400FB7FA5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -477,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

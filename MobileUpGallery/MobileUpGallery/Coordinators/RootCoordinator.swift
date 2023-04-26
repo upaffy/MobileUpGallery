@@ -11,14 +11,14 @@ final class RootCoordinator {
 
     private weak var window: UIWindow?
 
-    private let authorizationAssembly: AuthorizationAssembly
+    private let loginAssembly: LoginAssembly
     
-    init(authorizationAssembly: AuthorizationAssembly) {
-        self.authorizationAssembly = authorizationAssembly
+    init(loginAssembly: LoginAssembly) {
+        self.loginAssembly = loginAssembly
     }
 
     func start(in window: UIWindow) {
-        let vc = authorizationAssembly.makeAuthorizationModule(moduleOutput: self)
+        let vc = loginAssembly.makeLoginModule(moduleOutput: self)
         window.rootViewController = vc
         window.makeKeyAndVisible()
         self.window = window
@@ -28,6 +28,6 @@ final class RootCoordinator {
 
 }
 
-extension RootCoordinator: AuthorizationModuleOutput {
+extension RootCoordinator: LoginModuleOutput {
 
 }

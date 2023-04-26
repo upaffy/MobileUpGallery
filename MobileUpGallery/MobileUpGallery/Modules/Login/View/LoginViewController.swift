@@ -1,5 +1,5 @@
 //
-//  AuthorizationViewController.swift
+//  LoginViewController.swift
 //  MobileUpGallery
 //
 //  Created by Pavlentiy on 25.04.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthorizationViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     private enum Constants {
         enum NameLabel {
@@ -16,7 +16,7 @@ class AuthorizationViewController: UIViewController {
             static let textColor = UIColor.black
         }
         
-        enum AuthorizationButton {
+        enum LoginButton {
             static let insets = UIEdgeInsets(top: 8, left: 16, bottom: 16, right: 16)
             static let height: CGFloat = 52
             static let cornerRadius: CGFloat = 12
@@ -25,7 +25,7 @@ class AuthorizationViewController: UIViewController {
         }
     }
     
-    private let viewOutput: AuthorizationViewOutput
+    private let viewOutput: LoginViewOutput
     
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
@@ -38,20 +38,20 @@ class AuthorizationViewController: UIViewController {
         return label
     }()
     
-    private lazy var authorizationButton: UIButton = {
-        let button = UIButton()
+    private lazy var loginButton: UIButton = {
+        let button = UIButton(type: .system)
         let title = NSLocalizedString("authorization_by_vk_button_title", comment: "")
         button.setTitle(title, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(authorizationButtonPressed), for: .touchUpInside)
-        button.tintColor = Constants.AuthorizationButton.tintColor
-        button.backgroundColor = Constants.AuthorizationButton.backgroundColor
-        button.layer.cornerRadius = Constants.AuthorizationButton.cornerRadius
+        button.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
+        button.tintColor = Constants.LoginButton.tintColor
+        button.backgroundColor = Constants.LoginButton.backgroundColor
+        button.layer.cornerRadius = Constants.LoginButton.cornerRadius
         
         return button
     }()
 
-    init(viewOutput: AuthorizationViewOutput) {
+    init(viewOutput: LoginViewOutput) {
         self.viewOutput = viewOutput
         super.init(nibName: nil, bundle: nil)
     }
@@ -64,13 +64,13 @@ class AuthorizationViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupNameLabel()
-        setupAuthorizationButton()
+        setupLoginButton()
     }
 }
 
 // MARK: - Setup
 
-extension AuthorizationViewController {
+extension LoginViewController {
     private func setupNameLabel() {
         view.addSubview(nameLabel)
         NSLayoutConstraint.activate([
@@ -89,23 +89,23 @@ extension AuthorizationViewController {
         ])
     }
     
-    private func setupAuthorizationButton() {
-        view.addSubview(authorizationButton)
+    private func setupLoginButton() {
+        view.addSubview(loginButton)
         NSLayoutConstraint.activate([
-            authorizationButton.leadingAnchor.constraint(
+            loginButton.leadingAnchor.constraint(
                 equalTo: view.leadingAnchor,
-                constant: Constants.AuthorizationButton.insets.left
+                constant: Constants.LoginButton.insets.left
             ),
-            authorizationButton.trailingAnchor.constraint(
+            loginButton.trailingAnchor.constraint(
                 equalTo: view.trailingAnchor,
-                constant: -Constants.AuthorizationButton.insets.right
+                constant: -Constants.LoginButton.insets.right
             ),
-            authorizationButton.bottomAnchor.constraint(
+            loginButton.bottomAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.bottomAnchor,
-                constant: -Constants.AuthorizationButton.insets.bottom
+                constant: -Constants.LoginButton.insets.bottom
             ),
-            authorizationButton.heightAnchor.constraint(
-                equalToConstant: Constants.AuthorizationButton.height
+            loginButton.heightAnchor.constraint(
+                equalToConstant: Constants.LoginButton.height
             )
         ])
     }
@@ -113,14 +113,14 @@ extension AuthorizationViewController {
 
 // MARK: - Logic
 
-extension AuthorizationViewController {
-    @objc private func authorizationButtonPressed() {
+extension LoginViewController {
+    @objc private func loginButtonPressed() {
         
     }
 }
 
 // MARK: - AuthorizationViewInput
 
-extension AuthorizationViewController: AuthorizationViewInput {
+extension LoginViewController: LoginViewInput {
     
 }
