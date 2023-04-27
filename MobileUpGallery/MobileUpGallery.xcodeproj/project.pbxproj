@@ -11,7 +11,14 @@
 		E936291329F6C75400FB7FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E936291229F6C75400FB7FA5 /* AppDelegate.swift */; };
 		E936291C29F6C75900FB7FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E936291B29F6C75900FB7FA5 /* Assets.xcassets */; };
 		E936291F29F6C75900FB7FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E936291D29F6C75900FB7FA5 /* LaunchScreen.storyboard */; };
-		E940858929F929F900E6F596 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940858829F929F900E6F596 /* WebViewController.swift */; };
+		E940858F29F9677400E6F596 /* AuthorizationWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940858E29F9677400E6F596 /* AuthorizationWebViewController.swift */; };
+		E940859129F9678D00E6F596 /* AuthorizationWebViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940859029F9678D00E6F596 /* AuthorizationWebViewInput.swift */; };
+		E940859329F967AC00E6F596 /* AuthorizationWebViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940859229F967AC00E6F596 /* AuthorizationWebViewOutput.swift */; };
+		E940859629F9688B00E6F596 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940859529F9688B00E6F596 /* AuthorizationPresenter.swift */; };
+		E940859829F968E300E6F596 /* AuthorizationModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940859729F968E300E6F596 /* AuthorizationModuleOutput.swift */; };
+		E940859A29F96A1B00E6F596 /* AuthorizationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940859929F96A1B00E6F596 /* AuthorizationAssembly.swift */; };
+		E9B1533129FA60F6009CCB3E /* KeyChainServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1533029FA60F6009CCB3E /* KeyChainServiceProtocol.swift */; };
+		E9B1533329FA6102009CCB3E /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1533229FA6102009CCB3E /* KeyChainService.swift */; };
 		E9CEB8B929F7C16800CA1759 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8B829F7C16800CA1759 /* LoginViewController.swift */; };
 		E9CEB8BB29F7C1FD00CA1759 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8BA29F7C1FD00CA1759 /* LoginPresenter.swift */; };
 		E9CEB8BD29F7C28D00CA1759 /* LoginModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8BC29F7C28D00CA1759 /* LoginModuleOutput.swift */; };
@@ -36,7 +43,14 @@
 		E936291B29F6C75900FB7FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E936291E29F6C75900FB7FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E936292029F6C75900FB7FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E940858829F929F900E6F596 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E940858E29F9677400E6F596 /* AuthorizationWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationWebViewController.swift; sourceTree = "<group>"; };
+		E940859029F9678D00E6F596 /* AuthorizationWebViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationWebViewInput.swift; sourceTree = "<group>"; };
+		E940859229F967AC00E6F596 /* AuthorizationWebViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationWebViewOutput.swift; sourceTree = "<group>"; };
+		E940859529F9688B00E6F596 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		E940859729F968E300E6F596 /* AuthorizationModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationModuleOutput.swift; sourceTree = "<group>"; };
+		E940859929F96A1B00E6F596 /* AuthorizationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAssembly.swift; sourceTree = "<group>"; };
+		E9B1533029FA60F6009CCB3E /* KeyChainServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainServiceProtocol.swift; sourceTree = "<group>"; };
+		E9B1533229FA6102009CCB3E /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		E9CEB8B829F7C16800CA1759 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9CEB8BA29F7C1FD00CA1759 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		E9CEB8BC29F7C28D00CA1759 /* LoginModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleOutput.swift; sourceTree = "<group>"; };
@@ -139,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				E940858D29F9613800E6F596 /* AuthorizationWebViewController */,
+				E940859429F9686B00E6F596 /* AuthorizationPresenter */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -146,8 +161,29 @@
 		E940858D29F9613800E6F596 /* AuthorizationWebViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E940858E29F9677400E6F596 /* AuthorizationWebViewController.swift */,
+				E940859029F9678D00E6F596 /* AuthorizationWebViewInput.swift */,
+				E940859229F967AC00E6F596 /* AuthorizationWebViewOutput.swift */,
 			);
 			path = AuthorizationWebViewController;
+			sourceTree = "<group>";
+		};
+		E940859429F9686B00E6F596 /* AuthorizationPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				E940859529F9688B00E6F596 /* AuthorizationPresenter.swift */,
+				E940859729F968E300E6F596 /* AuthorizationModuleOutput.swift */,
+			);
+			path = AuthorizationPresenter;
+			sourceTree = "<group>";
+		};
+		E9B1532F29FA60D6009CCB3E /* KeyChainService */ = {
+			isa = PBXGroup;
+			children = (
+				E9B1533029FA60F6009CCB3E /* KeyChainServiceProtocol.swift */,
+				E9B1533229FA6102009CCB3E /* KeyChainService.swift */,
+			);
+			path = KeyChainService;
 			sourceTree = "<group>";
 		};
 		E9CEB8B429F7C10D00CA1759 /* Modules */ = {
@@ -155,7 +191,6 @@
 			children = (
 				E940858C29F9612100E6F596 /* Authorization */,
 				E9CEB8B529F7C11F00CA1759 /* Login */,
-				E940858829F929F900E6F596 /* WebViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -191,6 +226,7 @@
 		E9CEB8BE29F7C2D000CA1759 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E9B1532F29FA60D6009CCB3E /* KeyChainService */,
 				E9CEB8CA29F7C5D800CA1759 /* AuthorizationService */,
 			);
 			path = Services;
@@ -219,6 +255,7 @@
 			children = (
 				E9CEB8CE29F7C7FB00CA1759 /* ServiceAssembly.swift */,
 				E9CEB8D029F7C87A00CA1759 /* LoginAssembly.swift */,
+				E940859929F96A1B00E6F596 /* AuthorizationAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -243,6 +280,7 @@
 				E936290B29F6C75400FB7FA5 /* Sources */,
 				E936290C29F6C75400FB7FA5 /* Frameworks */,
 				E936290D29F6C75400FB7FA5 /* Resources */,
+				61E16CBDD6D1B81B5F29DC9D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,6 +361,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		61E16CBDD6D1B81B5F29DC9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileUpGallery/Pods-MobileUpGallery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileUpGallery/Pods-MobileUpGallery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileUpGallery/Pods-MobileUpGallery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E936292929F6E78400FB7FA5 /* Swiftlint Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -349,20 +404,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E940859629F9688B00E6F596 /* AuthorizationPresenter.swift in Sources */,
 				E9CEB8C929F7C5CD00CA1759 /* AuthorizationService.swift in Sources */,
+				E940859829F968E300E6F596 /* AuthorizationModuleOutput.swift in Sources */,
 				E9CEB8CC29F7C5FA00CA1759 /* AuthorizationServiceProtocol.swift in Sources */,
 				E9CEB8C129F7C2EF00CA1759 /* NetworkService.swift in Sources */,
+				E940859129F9678D00E6F596 /* AuthorizationWebViewInput.swift in Sources */,
+				E940858F29F9677400E6F596 /* AuthorizationWebViewController.swift in Sources */,
 				E9CEB8D129F7C87A00CA1759 /* LoginAssembly.swift in Sources */,
+				E940859329F967AC00E6F596 /* AuthorizationWebViewOutput.swift in Sources */,
+				E9B1533329FA6102009CCB3E /* KeyChainService.swift in Sources */,
 				E9CEB8C529F7C43A00CA1759 /* LoginViewInput.swift in Sources */,
 				E9CEB8BB29F7C1FD00CA1759 /* LoginPresenter.swift in Sources */,
 				E9CEB8C329F7C33600CA1759 /* NetworkServiceProtocol.swift in Sources */,
 				E9CEB8B929F7C16800CA1759 /* LoginViewController.swift in Sources */,
 				E9CEB8CF29F7C7FB00CA1759 /* ServiceAssembly.swift in Sources */,
 				E9CEB8C729F7C45F00CA1759 /* LoginViewOutput.swift in Sources */,
+				E940859A29F96A1B00E6F596 /* AuthorizationAssembly.swift in Sources */,
 				E9CEB8D429F7C9C200CA1759 /* RootCoordinator.swift in Sources */,
-				E940858929F929F900E6F596 /* WebViewController.swift in Sources */,
 				E9CEB8BD29F7C28D00CA1759 /* LoginModuleOutput.swift in Sources */,
 				E936291329F6C75400FB7FA5 /* AppDelegate.swift in Sources */,
+				E9B1533129FA60F6009CCB3E /* KeyChainServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

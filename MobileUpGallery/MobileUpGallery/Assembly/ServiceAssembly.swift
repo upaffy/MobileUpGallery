@@ -14,6 +14,10 @@ final class ServiceAssembly {
     }()
 
     func makeAuthorizationService() -> AuthorizationServiceProtocol {
-        AuthorizationService(networkService: networkService)
+        AuthorizationService(keychainService: makeKeyChainService())
+    }
+    
+    func makeKeyChainService() -> KeyChainServiceProtocol {
+        KeyChainService()
     }
 }

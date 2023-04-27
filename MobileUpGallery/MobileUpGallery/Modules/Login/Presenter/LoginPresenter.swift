@@ -12,15 +12,15 @@ final class LoginPresenter {
     private weak var moduleOutput: LoginModuleOutput?
     weak var viewInput: LoginViewInput?
     
-    init(moduleOutput: LoginModuleOutput? = nil) {
+    init(moduleOutput: LoginModuleOutput?) {
         self.moduleOutput = moduleOutput
     }
 }
 
 // MARK: - AuthorizationViewOutput
 
-extension LoginPresenter: LoginViewOutput {
+extension LoginPresenter: LoginViewOutput {    
     func didPressLoginButton() {
-        
+        moduleOutput?.moduleWantsToOpenAuthorization()
     }
 }

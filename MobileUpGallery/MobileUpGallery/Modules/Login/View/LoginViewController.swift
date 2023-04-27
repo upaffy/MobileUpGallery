@@ -115,11 +115,11 @@ extension LoginViewController {
 
 extension LoginViewController {
     @objc private func loginButtonPressed() {
-        
+        viewOutput.didPressLoginButton()
     }
 }
 
-// MARK: - AuthorizationViewInput
+// MARK: - LoginViewInput
 
 extension LoginViewController: LoginViewInput {
     
