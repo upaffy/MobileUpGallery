@@ -16,6 +16,7 @@ final class RootCoordinator {
     private let loginAssembly: LoginAssembly
     private let authorizationAssembly: AuthorizationAssembly
     private let photoCollectionAssembly: PhotoCollectionAssembly
+    private let photoDetailsAssembly: PhotoDetailsAssembly
     
     private var navigationController: UINavigationController
     
@@ -24,7 +25,8 @@ final class RootCoordinator {
         authorizationService: AuthorizationServiceProtocol,
         loginAssembly: LoginAssembly,
         authorizationAssembly: AuthorizationAssembly,
-        photoCollectionAssembly: PhotoCollectionAssembly
+        photoCollectionAssembly: PhotoCollectionAssembly,
+        photoDetailsAssembly: PhotoDetailsAssembly
     ) {
         self.navigationController = navigationController
         self.authorizationService = authorizationService
@@ -32,6 +34,7 @@ final class RootCoordinator {
         self.loginAssembly = loginAssembly
         self.authorizationAssembly = authorizationAssembly
         self.photoCollectionAssembly = photoCollectionAssembly
+        self.photoDetailsAssembly = photoDetailsAssembly
     }
 
     func start(in window: UIWindow) {
@@ -81,4 +84,18 @@ extension RootCoordinator: PhotoCollectionModuleOutput {
         let loginVC = loginAssembly.makeLoginModule(moduleOutput: self)
         navigationController.viewControllers = [loginVC]
     }
+    
+    func moduleWantsToOpenPhotoDetails(with photo: PhotoModel) {
+        let photoDetailsVC = photoDetailsAssembly.makePhotoDetailsModule(
+            moduleOutput: self,
+            photo: photo
+        )
+        navigationController.pushViewController(photoDetailsVC, animated: true)
+    }
+}
+
+// MARK: - PhotoDetailsModuleOutput
+
+extension RootCoordinator: PhotoDetailsModuleOutput {
+    
 }

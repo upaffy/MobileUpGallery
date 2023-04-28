@@ -119,6 +119,8 @@ extension PhotoCollectionViewController {
     
     private func setupNavBar(with navBarTitle: String, and logoutButtonTitle: String) {
         title = navBarTitle
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem?.tintColor = .black
         let rightBarButtonItem = UIBarButtonItem(
             title: logoutButtonTitle,
             style: .plain,

@@ -23,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             authorizationService: serviceAssembly.makeAuthorizationService(),
             loginAssembly: LoginAssembly(serviceAssembly: serviceAssembly),
             authorizationAssembly: AuthorizationAssembly(serviceAssembly: serviceAssembly),
-            photoCollectionAssembly: PhotoCollectionAssembly(serviceAssembly: serviceAssembly)
+            photoCollectionAssembly: PhotoCollectionAssembly(serviceAssembly: serviceAssembly),
+            photoDetailsAssembly: PhotoDetailsAssembly(serviceAssembly: serviceAssembly)
         )
         coordinator?.start(in: window)
 

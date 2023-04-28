@@ -24,4 +24,8 @@ final class ServiceAssembly {
     func makePhotoCollectionService() -> PhotoCollectionServiceProtocol {
         PhotoCollectionService(networkService: networkService)
     }
+    
+    func makeImageService() -> ImageServiceProtocol {
+        ImageService.shared
+    }
 }
