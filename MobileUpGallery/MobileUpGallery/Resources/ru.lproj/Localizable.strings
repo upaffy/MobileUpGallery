@@ -27,3 +27,6 @@
 "standard_error_title" = "Что-то пошло не так";
 "standard_error_message" = "Попробуйте еще раз";
 "undefined_error_title" = "Неизвестная ошибка";
+
+// Photo Details
+"success_title" = "Успешно!";

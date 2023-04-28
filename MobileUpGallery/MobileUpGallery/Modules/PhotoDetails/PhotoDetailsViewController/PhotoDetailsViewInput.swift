@@ -12,4 +12,5 @@ protocol PhotoDetailsViewInput: AnyObject {
     func setLoading(enabled: Bool)
     func showImage(with data: Data)
     func showAlert(title: String, message: String?)
+    func shareImage()
 }

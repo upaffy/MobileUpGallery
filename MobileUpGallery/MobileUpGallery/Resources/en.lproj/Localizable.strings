@@ -27,3 +27,6 @@
 "standard_error_title" = "Something went wrong";
 "standard_error_message" = "Try again";
 "undefined_error_title" = "Undefined Error";
+
+// Photo Details
+"success_title" = "Success!";

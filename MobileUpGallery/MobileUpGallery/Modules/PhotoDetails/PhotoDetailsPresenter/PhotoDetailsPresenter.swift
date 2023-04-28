@@ -49,4 +49,15 @@ extension PhotoDetailsPresenter: PhotoDetailsViewOutput {
         let dateString = dateFormatter.string(from: date)
         viewInput?.setupUI(with: dateString)
     }
+    
+    func shareDidTap() {
+        viewInput?.shareImage()
+    }
+    
+    func didSuccessShare() {
+        viewInput?.showAlert(
+            title: NSLocalizedString("success_title", comment: ""),
+            message: nil
+        )
+    }
 }

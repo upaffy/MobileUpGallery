@@ -9,4 +9,6 @@ import Foundation
 
 protocol PhotoDetailsViewOutput {
     func viewIsReady()
+    func shareDidTap()
+    func didSuccessShare()
 }

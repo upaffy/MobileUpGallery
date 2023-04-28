@@ -12,6 +12,7 @@ class PhotoDetailsViewController: UIViewController {
     private enum Constants {
         static let shareIcon = UIImage(systemName: "square.and.arrow.up")
         static let okActionTitle = "OK"
+        static let successAlertTitle = "Success!"
     }
     
     private let viewOutput: PhotoDetailsViewOutput
@@ -61,7 +62,7 @@ class PhotoDetailsViewController: UIViewController {
     }
     
     @objc private func shareDidTap() {
-        
+        viewOutput.shareDidTap()
     }
 }
 
@@ -91,6 +92,21 @@ extension PhotoDetailsViewController {
 // MARK: - PhotoDetailsViewInput
 
 extension PhotoDetailsViewController: PhotoDetailsViewInput {
+    func shareImage() {
+        guard let image = imageView.image else {
+            return
+        }
+        let items = [image]
+        let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        
+        activityVC.completionWithItemsHandler = { [weak self] _, isSuccess, _, _ in
+            if isSuccess {
+                self?.viewOutput.didSuccessShare()
+            }
+        }
+        present(activityVC, animated: true)
+    }
+    
     func setupUI(with title: String) {
         setupNavBar(with: title)
     }
