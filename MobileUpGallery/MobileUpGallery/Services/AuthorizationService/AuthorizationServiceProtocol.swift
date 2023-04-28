@@ -11,4 +11,6 @@ protocol AuthorizationServiceProtocol {
     func getOAuthVKURL() -> URL?
     func fetchNecessaryTokenInfoElseNil(from url: URL) -> [String: String]?
     func saveTokenInfo(_ tokenInfo: [String: String])
+    func removeTokenInfo()
+    func getTokenIfExistAndValid() -> String?
 }

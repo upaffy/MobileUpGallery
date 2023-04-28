@@ -19,8 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let serviceAssembly = ServiceAssembly()
         coordinator = RootCoordinator(
+            navigationController: UINavigationController(),
+            authorizationService: serviceAssembly.makeAuthorizationService(),
             loginAssembly: LoginAssembly(serviceAssembly: serviceAssembly),
-            authorizationAssembly: AuthorizationAssembly(serviceAssembly: serviceAssembly)
+            authorizationAssembly: AuthorizationAssembly(serviceAssembly: serviceAssembly),
+            photoCollectionAssembly: PhotoCollectionAssembly(serviceAssembly: serviceAssembly)
         )
         coordinator?.start(in: window)
 

@@ -16,3 +16,14 @@
 "cancel_alert_title" = "Exit";
 "cancel_alert_message" = "If you close this screen, the data will not be saved";
 "cancel_title" = "Cancel";
+
+// Photo Collection
+"photo_collection_title" = "MobileUp Gallery";
+"logout_button_title" = "Logout";
+
+// Network
+"client_error_title" = "Client Error";
+"wrong_request_params_error_message" = "Wrong request params";
+"standard_error_title" = "Something went wrong";
+"standard_error_message" = "Try again";
+"undefined_error_title" = "Undefined Error";

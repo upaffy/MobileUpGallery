@@ -75,7 +75,7 @@ final class AuthorizationService: AuthorizationServiceProtocol {
         
         guard
             infoDict[VKOAuth.accessTokenField] != nil,
-            infoDict[VKOAuth.expiresInField] != nil,
+            infoDict[VKOAuth.expireDateField] != nil,
             infoDict[VKOAuth.userIDField] != nil
         else {
             return nil
@@ -88,5 +88,28 @@ final class AuthorizationService: AuthorizationServiceProtocol {
         for (key, value) in tokenInfo {
             keychainService.set(value: value, for: key)
         }
+    }
+    
+    func removeTokenInfo() {
+        for field in [VKOAuth.accessTokenField, VKOAuth.userIDField, VKOAuth.expireDateField] {
+            keychainService.deleteValue(by: field)
+        }
+    }
+    
+    func getTokenIfExistAndValid() -> String? {
+        guard
+            let token = keychainService.getValue(by: VKOAuth.accessTokenField),
+            let expireDateString = keychainService.getValue(by: VKOAuth.expireDateField),
+            let expireDateDouble = Double(expireDateString)
+        else {
+            return nil
+        }
+        
+        let expireDate = Date(timeIntervalSince1970: expireDateDouble)
+        if expireDate > Date(timeIntervalSinceNow: .zero) {
+            return token
+        }
+        
+        return nil
     }
 }

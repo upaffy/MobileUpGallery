@@ -17,8 +17,22 @@
 		E940859629F9688B00E6F596 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940859529F9688B00E6F596 /* AuthorizationPresenter.swift */; };
 		E940859829F968E300E6F596 /* AuthorizationModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940859729F968E300E6F596 /* AuthorizationModuleOutput.swift */; };
 		E940859A29F96A1B00E6F596 /* AuthorizationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940859929F96A1B00E6F596 /* AuthorizationAssembly.swift */; };
+		E95202E229FAFE1E005D0001 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95202E129FAFE1E005D0001 /* APIModels.swift */; };
+		E95202E529FB7906005D0001 /* PhotoCollectionServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95202E429FB7906005D0001 /* PhotoCollectionServiceProtocol.swift */; };
+		E95202E729FB792C005D0001 /* PhotoCollectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95202E629FB792C005D0001 /* PhotoCollectionService.swift */; };
+		E95202EA29FB7B21005D0001 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95202E929FB7B21005D0001 /* PhotoModel.swift */; };
+		E95202EC29FB7BF8005D0001 /* VKErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95202EB29FB7BF8005D0001 /* VKErrorModel.swift */; };
+		E95202EF29FBA4D2005D0001 /* ImageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95202EE29FBA4D2005D0001 /* ImageServiceProtocol.swift */; };
+		E95202F129FBA4E0005D0001 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95202F029FBA4E0005D0001 /* ImageService.swift */; };
 		E9B1533129FA60F6009CCB3E /* KeyChainServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1533029FA60F6009CCB3E /* KeyChainServiceProtocol.swift */; };
 		E9B1533329FA6102009CCB3E /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1533229FA6102009CCB3E /* KeyChainService.swift */; };
+		E9B1533829FA9401009CCB3E /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1533729FA9401009CCB3E /* PhotoCollectionViewController.swift */; };
+		E9B1533A29FA9428009CCB3E /* PhotoCollectionViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1533929FA9428009CCB3E /* PhotoCollectionViewInput.swift */; };
+		E9B1533C29FA94A8009CCB3E /* PhotoCollectionViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1533B29FA94A8009CCB3E /* PhotoCollectionViewOutput.swift */; };
+		E9B1533E29FA952A009CCB3E /* PhotoCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1533D29FA952A009CCB3E /* PhotoCollectionPresenter.swift */; };
+		E9B1534029FA9567009CCB3E /* PhotoCollectionModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1533F29FA9567009CCB3E /* PhotoCollectionModuleOutput.swift */; };
+		E9B1534229FA95EB009CCB3E /* PhotoCollectionAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1534129FA95EB009CCB3E /* PhotoCollectionAssembly.swift */; };
+		E9B1534529FAB99E009CCB3E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1534429FAB99E009CCB3E /* PhotoCollectionViewCell.swift */; };
 		E9CEB8B929F7C16800CA1759 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8B829F7C16800CA1759 /* LoginViewController.swift */; };
 		E9CEB8BB29F7C1FD00CA1759 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8BA29F7C1FD00CA1759 /* LoginPresenter.swift */; };
 		E9CEB8BD29F7C28D00CA1759 /* LoginModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEB8BC29F7C28D00CA1759 /* LoginModuleOutput.swift */; };
@@ -49,8 +63,22 @@
 		E940859529F9688B00E6F596 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
 		E940859729F968E300E6F596 /* AuthorizationModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationModuleOutput.swift; sourceTree = "<group>"; };
 		E940859929F96A1B00E6F596 /* AuthorizationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAssembly.swift; sourceTree = "<group>"; };
+		E95202E129FAFE1E005D0001 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		E95202E429FB7906005D0001 /* PhotoCollectionServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionServiceProtocol.swift; sourceTree = "<group>"; };
+		E95202E629FB792C005D0001 /* PhotoCollectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionService.swift; sourceTree = "<group>"; };
+		E95202E929FB7B21005D0001 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		E95202EB29FB7BF8005D0001 /* VKErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKErrorModel.swift; sourceTree = "<group>"; };
+		E95202EE29FBA4D2005D0001 /* ImageServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceProtocol.swift; sourceTree = "<group>"; };
+		E95202F029FBA4E0005D0001 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		E9B1533029FA60F6009CCB3E /* KeyChainServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainServiceProtocol.swift; sourceTree = "<group>"; };
 		E9B1533229FA6102009CCB3E /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
+		E9B1533729FA9401009CCB3E /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		E9B1533929FA9428009CCB3E /* PhotoCollectionViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewInput.swift; sourceTree = "<group>"; };
+		E9B1533B29FA94A8009CCB3E /* PhotoCollectionViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewOutput.swift; sourceTree = "<group>"; };
+		E9B1533D29FA952A009CCB3E /* PhotoCollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionPresenter.swift; sourceTree = "<group>"; };
+		E9B1533F29FA9567009CCB3E /* PhotoCollectionModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionModuleOutput.swift; sourceTree = "<group>"; };
+		E9B1534129FA95EB009CCB3E /* PhotoCollectionAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionAssembly.swift; sourceTree = "<group>"; };
+		E9B1534429FAB99E009CCB3E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		E9CEB8B829F7C16800CA1759 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E9CEB8BA29F7C1FD00CA1759 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		E9CEB8BC29F7C28D00CA1759 /* LoginModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleOutput.swift; sourceTree = "<group>"; };
@@ -122,8 +150,8 @@
 				E9CEB8D229F7C9B200CA1759 /* Coordinators */,
 				E9CEB8CD29F7C7D100CA1759 /* Assembly */,
 				E9CEB8B429F7C10D00CA1759 /* Modules */,
+				E95202E829FB7A84005D0001 /* Models */,
 				E9CEB8BE29F7C2D000CA1759 /* Services */,
-				E9CEB8BF29F7C2DB00CA1759 /* Network */,
 				E936292629F6C8A500FB7FA5 /* App */,
 				E936292729F6C8BA00FB7FA5 /* Resources */,
 			);
@@ -177,6 +205,41 @@
 			path = AuthorizationPresenter;
 			sourceTree = "<group>";
 		};
+		E95202E029FAFE07005D0001 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E95202E129FAFE1E005D0001 /* APIModels.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E95202E329FB78BD005D0001 /* PhotoCollectionService */ = {
+			isa = PBXGroup;
+			children = (
+				E95202E429FB7906005D0001 /* PhotoCollectionServiceProtocol.swift */,
+				E95202E629FB792C005D0001 /* PhotoCollectionService.swift */,
+			);
+			path = PhotoCollectionService;
+			sourceTree = "<group>";
+		};
+		E95202E829FB7A84005D0001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E95202E929FB7B21005D0001 /* PhotoModel.swift */,
+				E95202EB29FB7BF8005D0001 /* VKErrorModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E95202ED29FBA4B4005D0001 /* ImageService */ = {
+			isa = PBXGroup;
+			children = (
+				E95202EE29FBA4D2005D0001 /* ImageServiceProtocol.swift */,
+				E95202F029FBA4E0005D0001 /* ImageService.swift */,
+			);
+			path = ImageService;
+			sourceTree = "<group>";
+		};
 		E9B1532F29FA60D6009CCB3E /* KeyChainService */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,11 +249,49 @@
 			path = KeyChainService;
 			sourceTree = "<group>";
 		};
+		E9B1533429FA939E009CCB3E /* PhotoCollection */ = {
+			isa = PBXGroup;
+			children = (
+				E9B1533529FA93CA009CCB3E /* PhotoCollectionViewController */,
+				E9B1533629FA93D5009CCB3E /* PhotoCollectionPresenter */,
+			);
+			path = PhotoCollection;
+			sourceTree = "<group>";
+		};
+		E9B1533529FA93CA009CCB3E /* PhotoCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9B1534329FAB97F009CCB3E /* Cell */,
+				E9B1533729FA9401009CCB3E /* PhotoCollectionViewController.swift */,
+				E9B1533929FA9428009CCB3E /* PhotoCollectionViewInput.swift */,
+				E9B1533B29FA94A8009CCB3E /* PhotoCollectionViewOutput.swift */,
+			);
+			path = PhotoCollectionViewController;
+			sourceTree = "<group>";
+		};
+		E9B1533629FA93D5009CCB3E /* PhotoCollectionPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				E9B1533D29FA952A009CCB3E /* PhotoCollectionPresenter.swift */,
+				E9B1533F29FA9567009CCB3E /* PhotoCollectionModuleOutput.swift */,
+			);
+			path = PhotoCollectionPresenter;
+			sourceTree = "<group>";
+		};
+		E9B1534329FAB97F009CCB3E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E9B1534429FAB99E009CCB3E /* PhotoCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		E9CEB8B429F7C10D00CA1759 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				E940858C29F9612100E6F596 /* Authorization */,
 				E9CEB8B529F7C11F00CA1759 /* Login */,
+				E940858C29F9612100E6F596 /* Authorization */,
+				E9B1533429FA939E009CCB3E /* PhotoCollection */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -228,6 +329,9 @@
 			children = (
 				E9B1532F29FA60D6009CCB3E /* KeyChainService */,
 				E9CEB8CA29F7C5D800CA1759 /* AuthorizationService */,
+				E95202E329FB78BD005D0001 /* PhotoCollectionService */,
+				E95202ED29FBA4B4005D0001 /* ImageService */,
+				E9CEB8BF29F7C2DB00CA1759 /* Network */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -235,6 +339,7 @@
 		E9CEB8BF29F7C2DB00CA1759 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				E95202E029FAFE07005D0001 /* API */,
 				E9CEB8C029F7C2EF00CA1759 /* NetworkService.swift */,
 				E9CEB8C229F7C33600CA1759 /* NetworkServiceProtocol.swift */,
 			);
@@ -256,6 +361,7 @@
 				E9CEB8CE29F7C7FB00CA1759 /* ServiceAssembly.swift */,
 				E9CEB8D029F7C87A00CA1759 /* LoginAssembly.swift */,
 				E940859929F96A1B00E6F596 /* AuthorizationAssembly.swift */,
+				E9B1534129FA95EB009CCB3E /* PhotoCollectionAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -405,8 +511,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E940859629F9688B00E6F596 /* AuthorizationPresenter.swift in Sources */,
+				E9B1534029FA9567009CCB3E /* PhotoCollectionModuleOutput.swift in Sources */,
 				E9CEB8C929F7C5CD00CA1759 /* AuthorizationService.swift in Sources */,
+				E9B1533A29FA9428009CCB3E /* PhotoCollectionViewInput.swift in Sources */,
 				E940859829F968E300E6F596 /* AuthorizationModuleOutput.swift in Sources */,
+				E9B1533C29FA94A8009CCB3E /* PhotoCollectionViewOutput.swift in Sources */,
 				E9CEB8CC29F7C5FA00CA1759 /* AuthorizationServiceProtocol.swift in Sources */,
 				E9CEB8C129F7C2EF00CA1759 /* NetworkService.swift in Sources */,
 				E940859129F9678D00E6F596 /* AuthorizationWebViewInput.swift in Sources */,
@@ -414,15 +523,26 @@
 				E9CEB8D129F7C87A00CA1759 /* LoginAssembly.swift in Sources */,
 				E940859329F967AC00E6F596 /* AuthorizationWebViewOutput.swift in Sources */,
 				E9B1533329FA6102009CCB3E /* KeyChainService.swift in Sources */,
+				E95202F129FBA4E0005D0001 /* ImageService.swift in Sources */,
+				E95202EF29FBA4D2005D0001 /* ImageServiceProtocol.swift in Sources */,
+				E95202E729FB792C005D0001 /* PhotoCollectionService.swift in Sources */,
 				E9CEB8C529F7C43A00CA1759 /* LoginViewInput.swift in Sources */,
 				E9CEB8BB29F7C1FD00CA1759 /* LoginPresenter.swift in Sources */,
+				E95202EA29FB7B21005D0001 /* PhotoModel.swift in Sources */,
 				E9CEB8C329F7C33600CA1759 /* NetworkServiceProtocol.swift in Sources */,
 				E9CEB8B929F7C16800CA1759 /* LoginViewController.swift in Sources */,
 				E9CEB8CF29F7C7FB00CA1759 /* ServiceAssembly.swift in Sources */,
+				E95202EC29FB7BF8005D0001 /* VKErrorModel.swift in Sources */,
 				E9CEB8C729F7C45F00CA1759 /* LoginViewOutput.swift in Sources */,
+				E9B1534229FA95EB009CCB3E /* PhotoCollectionAssembly.swift in Sources */,
+				E9B1533E29FA952A009CCB3E /* PhotoCollectionPresenter.swift in Sources */,
 				E940859A29F96A1B00E6F596 /* AuthorizationAssembly.swift in Sources */,
 				E9CEB8D429F7C9C200CA1759 /* RootCoordinator.swift in Sources */,
 				E9CEB8BD29F7C28D00CA1759 /* LoginModuleOutput.swift in Sources */,
+				E95202E529FB7906005D0001 /* PhotoCollectionServiceProtocol.swift in Sources */,
+				E9B1533829FA9401009CCB3E /* PhotoCollectionViewController.swift in Sources */,
+				E9B1534529FAB99E009CCB3E /* PhotoCollectionViewCell.swift in Sources */,
+				E95202E229FAFE1E005D0001 /* APIModels.swift in Sources */,
 				E936291329F6C75400FB7FA5 /* AppDelegate.swift in Sources */,
 				E9B1533129FA60F6009CCB3E /* KeyChainServiceProtocol.swift in Sources */,
 			);
