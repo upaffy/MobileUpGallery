@@ -9,4 +9,5 @@ import Foundation
 
 protocol PhotoCollectionModuleOutput: AnyObject {
     func moduleWantsToOpenLogin()
+    func moduleWantsToOpenPhotoDetails(with photo: PhotoModel)
 }

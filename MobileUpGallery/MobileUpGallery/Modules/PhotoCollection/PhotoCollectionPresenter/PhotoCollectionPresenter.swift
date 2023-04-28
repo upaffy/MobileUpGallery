@@ -89,6 +89,8 @@ extension PhotoCollectionPresenter: PhotoCollectionViewOutput {
     }
     
     func didSelectItem(at index: Int) {
-        // notaTODO: add transition
+        guard photos.count > index else { return }
+        let photo = photos[index]
+        moduleOutput?.moduleWantsToOpenPhotoDetails(with: photo)
     }
 }
