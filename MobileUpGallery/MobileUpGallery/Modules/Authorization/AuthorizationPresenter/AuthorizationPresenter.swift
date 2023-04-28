@@ -45,8 +45,7 @@ extension AuthorizationPresenter: AuthorizationWebViewOutput {
     
     func didPressCancelAlertAction(shouldCancel: Bool) {
         if shouldCancel {
-            // notaTODO: without success
-            moduleOutput?.moduleWantsToDismiss()
+            moduleOutput?.moduleWantsToDismiss(withToken: nil)
         }
     }
     
@@ -64,7 +63,7 @@ extension AuthorizationPresenter: AuthorizationWebViewOutput {
         }
         
         authorizationService.saveTokenInfo(tokenInfo)
-        // notaTODO: with success
-        moduleOutput?.moduleWantsToDismiss()
+        let token = authorizationService.getTokenIfExistAndValid()
+        moduleOutput?.moduleWantsToDismiss(withToken: token)
     }
 }

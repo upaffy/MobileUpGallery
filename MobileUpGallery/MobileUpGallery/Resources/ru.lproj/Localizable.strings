@@ -16,3 +16,14 @@
 "cancel_alert_title" = "Выход";
 "cancel_alert_message" = "Если закрыть этот экран, данные не сохранятся";
 "cancel_title" = "Отмена";
+
+// Photo Collection
+"photo_collection_title" = "MobileUp Gallery";
+"logout_button_title" = "Выход";
+
+// Network
+"client_error_title" = "Ошибка клиента";
+"wrong_request_params_error_message" = "Неправильные параметры запроса";
+"standard_error_title" = "Что-то пошло не так";
+"standard_error_message" = "Попробуйте еще раз";
+"undefined_error_title" = "Неизвестная ошибка";

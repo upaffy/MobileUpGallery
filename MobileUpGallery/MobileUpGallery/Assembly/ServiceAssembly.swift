@@ -10,7 +10,7 @@ import Foundation
 final class ServiceAssembly {
 
     private lazy var networkService: NetworkServiceProtocol = {
-        NetworkService()
+        NetworkService.shared
     }()
 
     func makeAuthorizationService() -> AuthorizationServiceProtocol {
@@ -19,5 +19,9 @@ final class ServiceAssembly {
     
     func makeKeyChainService() -> KeyChainServiceProtocol {
         KeyChainService()
+    }
+    
+    func makePhotoCollectionService() -> PhotoCollectionServiceProtocol {
+        PhotoCollectionService(networkService: networkService)
     }
 }

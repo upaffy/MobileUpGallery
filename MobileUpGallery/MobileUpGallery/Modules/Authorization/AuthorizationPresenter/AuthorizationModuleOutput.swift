@@ -8,5 +8,5 @@
 import UIKit
 
 protocol AuthorizationModuleOutput: AnyObject {
-    func moduleWantsToDismiss()
+    func moduleWantsToDismiss(withToken authToken: String?)
 }
